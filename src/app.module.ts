@@ -7,6 +7,9 @@ import { JwtModule } from '@nestjs/jwt';
 import { AuthGuard } from './guards/auth.guard';
 import { ConfigModule } from '@nestjs/config';
 import configuration from './config/configuration';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
+import { AttendanceModule } from './attendance/attendance.module';
 @Module({
   imports: [
     CatsModule,
@@ -21,6 +24,10 @@ import configuration from './config/configuration';
       secret: configuration().secret,
       signOptions: { expiresIn: '10m' },
     }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'client'),
+    }),
+    AttendanceModule,
   ],
   providers: [
     {

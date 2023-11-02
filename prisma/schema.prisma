@@ -16,3 +16,10 @@ model User {
   password String?
   role     String
 }
+
+model Attendance {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  username String
+  userId   String
+  date     DateTime
+}
