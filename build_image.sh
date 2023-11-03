@@ -1,0 +1,1 @@
+docker build -t chiemdu/face-recognition --platform linux/amd64 .

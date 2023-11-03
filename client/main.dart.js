@@ -33526,7 +33526,7 @@ A.a_b.prototype={}
 A.BB.prototype={
 R(a){return new A.ro(B.Ct,"Flutter Demo",A.ado(null,B.fh,null),null)}}
 A.rD.prototype={
-al(){var s,r,q,p,o,n,m,l,k,j,i,h="https://face-attendance.onrender.com",g="query",f=new A.a_b(),e=t.N,d=t.z,c=A.v(e,d)
+al(){var s,r,q,p,o,n,m,l,k,j,i,h="https://face-attendance-gnl9.onrender.com",g="query",f=new A.a_b(),e=t.N,d=t.z,c=A.v(e,d)
 c.l(0,"transports",A.a(["websocket"],t.s))
 s=A.uJ(h)
 r=s.ghO()+"://"+s.gkO(s)+":"+s.gnd(s)
@@ -33534,7 +33534,7 @@ q=s.gjp(s)
 p=$.a6q.X(0,r)&&$.a6q.h(0,r).d.X(0,q)
 o=c.h(0,"forceNew")===!0||c.h(0,"force new connection")===!0||!1===c.h(0,"multiplex")||p
 n=A.bd("io")
-if(o){$.ahr().a7(B.j,"ignoring socket cache for https://face-attendance.onrender.com",null,null)
+if(o){$.ahr().a7(B.j,"ignoring socket cache for https://face-attendance-gnl9.onrender.com",null,null)
 n.b=A.acc(c,h)}else{m=$.a6q.h(0,r)
 if(m==null){m=A.acc(c,h)
 $.a6q.l(0,r,m)}n.b=m}if(s.gnj(s).length!==0&&c.h(0,g)==null)c.l(0,g,s.gnj(s))
